@@ -1,4 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+};
+
+body{
+    background: rgb(101, 101, 231);
+}
+
+.fracciones{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid;
+    gap: 25px;
+    font-family: sans-serif;
+    background: black;
+}
+
+.text{
+    font-size: 50px;
+    color: white;
+    width: 80px;
+    height: 100px;
+    border: 3px solid rgb(54, 54, 54);
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(54, 54, 54, 0.668);
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.fa-clock{
+    width: 100%;
+    padding: 0;
+}
+
+.botones {
+    margin: 20px 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.boton{
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    width: 150px ;
+    height: 60px;
+    box-shadow: 5px 5px 15px rgb(66, 61, 61);
+}
+
+.Escribir{
+    width: 300px;
+    box-shadow: 5px 5px 5px rgb(66, 61, 61);
+
+}
 /* 
 
     You can write your own styles here...
