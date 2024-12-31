@@ -2,7 +2,7 @@ import React from "react"
 import { useState } from "react";
 import { useEffect } from "react";
 import Digi from "./Digi";
-import swal from "sweetalert";
+import swal from "sweetalert2";
 
 
 
@@ -25,14 +25,13 @@ useEffect(()=>{
                 if(countdown){
                     if(cuenta > 0){                       
                         if(cuenta === alerta) {
-                            swal({
-                                title: "CLOCK",
-                                text : `Te quedan ${alerta} segundos `,
-                                icon : "warning",
-                                button : "ok",
-                                timer : "2000"
+                            swal.fire({
+                                imageUrl: "https://i.ytimg.com/vi/fuG-gNV2oDM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBbukVK-YskOrfedcDf2KJpxeqg5A",
+                                html: `<h1>Te queda ${alerta} segundos pa que te vayas mi loco</h1>`,
+                                imageHeight: "200",
+                                imageWidth: "300",
+                                timer : "6000"
                                 }); 
-                                
                         }
                             return cuenta - 1
                     }else{
@@ -41,13 +40,13 @@ useEffect(()=>{
                     };
                 }else{
                     if(alerta != false && cuenta + 1 === alerta){
-                        swal({
-                            title: "CLOCK",
-                            text : `Te quedan ${alerta} segundos `,
-                            icon : "warning",
-                            button : "ok",
-                            timer : "2000"
-                            }); 
+                        swal.fire({
+                            imageUrl: "https://img.freepik.com/vector-premium/ilustracion-plana-tiempo-primavera-adelante_23-2151227758.jpg",
+                            html: `<h1>Llevas ${alerta} segundos mi loco!!</h1>`,
+                            imageHeight: "200",
+                            imageWidth: "300",
+                            timer : "6000"
+                            });  
                     }
                     return cuenta + 1}
             })
@@ -58,14 +57,14 @@ useEffect(()=>{
     return () => clearInterval(interval)
 }, [isRunnin, countdown, alerta]);
 
+
+
 const cuentaRegresiva = ((valorInicial)=>{    
     if(valorInicial > 0){
         setCounter(valorInicial)
     }else{
         setCounter(counter)
     }    
-
-    console.log(counter);
     
     setCountdown(true)
     setIsRunnin(true)
@@ -99,14 +98,6 @@ const reset = () => {
     setCountdown(false)
     setIsRunnin(false)
 };
-
-
-/*const alertaUser = (numero) =>{  
-    if(alerta){        
-           
-    };
-};*/
-
 
 const digi1 = Math.floor(counter % 10)
 const digi2 = Math.floor((counter % 100) / 10)
