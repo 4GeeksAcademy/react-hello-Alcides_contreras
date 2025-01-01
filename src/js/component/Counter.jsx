@@ -26,10 +26,10 @@ useEffect(()=>{
                     if(cuenta > 0){                       
                         if(cuenta === alerta) {
                             swal.fire({
-                                imageUrl: "https://i.ytimg.com/vi/fuG-gNV2oDM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBbukVK-YskOrfedcDf2KJpxeqg5A",
-                                html: `<h1>Te queda ${alerta} segundos pa que te vayas mi loco</h1>`,
-                                imageHeight: "200",
-                                imageWidth: "300",
+                                imageUrl: "https://i.scdn.co/image/ab67616d0000b27381808297b617d94947639342",
+                                html: `<h1>Te queda ${alerta} segundos para que acabe tu tiempo </h1>`,
+                                imageHeight: "300",
+                                imageWidth: "400",
                                 timer : "6000"
                                 }); 
                         }
@@ -42,7 +42,7 @@ useEffect(()=>{
                     if(alerta != false && cuenta + 1 === alerta){
                         swal.fire({
                             imageUrl: "https://img.freepik.com/vector-premium/ilustracion-plana-tiempo-primavera-adelante_23-2151227758.jpg",
-                            html: `<h1>Llevas ${alerta} segundos mi loco!!</h1>`,
+                            html: `<h1>Llevas ${alerta} segundos corriendo </h1>`,
                             imageHeight: "200",
                             imageWidth: "300",
                             timer : "6000"
